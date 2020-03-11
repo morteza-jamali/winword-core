@@ -1,13 +1,13 @@
 <?php 
-    namespace AbriCoderCore\Core;
+    namespace WinWordCore\App;
 
     class View {
-        public static function display($path , $parameters = []) {
-            \Phug::displayFile(Config::getDefault('path.views') . $path . '.pug' , $parameters);
+        public static function display($path , $parameters = [] , $extension = '.pug') {
+            \Phug::displayFile(Config::getDefault('path.views') . $path . $extension , $parameters);
         }
 
-	    public static function render($path , $parameters = []) {
-		    return \Phug::renderFile(Config::getDefault('path.views') . $path . '.pug' , $parameters);
+	    public static function render($path , $parameters = [] , $extension = '.pug') {
+		    return \Phug::renderFile(Config::getDefault('path.views') . $path . $extension , $parameters);
         }
 
         public static function getScripts($names) {

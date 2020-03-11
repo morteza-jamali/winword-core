@@ -1,5 +1,5 @@
 <?php
-	namespace AbriCoderCore\Core;
+	namespace WinWordCore\App;
 
 	class Response {
 		private $response = null;
