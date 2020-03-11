@@ -1,0 +1,26 @@
+{
+    "name": "winword/core",
+    "version": "1.0.0",
+    "type": "library",
+    "description": "This is WinWord project core library",
+    "keywords": ["winword" , "core"],
+    "homepage": "https://gitlab.com/mrtzaj/winword-core",
+    "authors": [
+        {
+            "name": "Morteza Jamali",
+            "email": "mortezajamali4241@gmail.com",
+            "homepage": "https://abricoder.ir",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WinWordCore\\": ""
+        }
+    } ,
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
