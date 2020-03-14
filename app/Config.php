@@ -2,15 +2,15 @@
 	namespace WinWordCore\App;
 
 	use Noodlehaus\Config as NDConfig;
-	use WinWord\Config as WinConfig;
+	use WinWord\Bootstrap\Bootstrap;
 
 	class Config {
 		public static function get($key) {
-			return (new NDConfig(ABSPATH . 'config.json'))->get($key);
+			return (new NDConfig(ABSPATH . 'wp-content/plugins/winword/config.json'))->get($key);
 		}
 
 		public static function getDefault($key) {
-			return (new WinConfig([]))->get($key);
+			return (new Bootstrap([]))->get($key);
 		}
 	}
 ?>
