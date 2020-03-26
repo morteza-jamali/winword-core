@@ -2,6 +2,7 @@
     "name": "winword/core",
     "version": "1.0.0",
     "type": "library",
+    "license": "CC0-1.0",
     "description": "This is WinWord project core library",
     "keywords": ["winword" , "core"],
     "homepage": "https://gitlab.com/mrtzaj/winword-core",
